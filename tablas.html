@@ -8,50 +8,48 @@
         <p>Tarea: <b>Tablas</b></p>
         <p>Instrucciones: Debe crear un documento HTML con sus respectivos estilos en CSS para crear Tablas parecidas a las
             mostradas a continuación:</p>
-        <div>
-            <table class="tabla_sen">
+        <div class="">
+            <table class="table-sen">
                 <thead>
                    <tr>
-                    <td colspan="2">Tablas sencilla</td>
-                   </tr> 
-                   <tr>
-                       <td>Clima</td>
-                       <td>Nùmero de dìas</td>
+                       <th>Clima</th>
+                       <th>Nùmero de dìas</th>
                    </tr>
-                   <tr>
-                       <td>Soleado</td>
-                       <td>12</td>
-                   </tr>
-                   <tr>
-                    <td>Nubes y sol</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>Nublado</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Lluvia</td>
-                    <td>4</td>
-                </tr>
                 </thead>
+                <tbody>
+                    <tr>
+                        <td>Soleado</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                     <td>Nubes y sol</td>
+                     <td>9</td>
+                 </tr>
+                 <tr>
+                     <td>Nublado</td>
+                     <td>5</td>
+                 </tr>
+                 <tr>
+                     <td>Lluvia</td>
+                     <td>4</td>
+                 </tr>
+                </tbody>     
             </table>
-        </div>    
+        </div> 
+        <br>   
         <div>
-         <table class="Tabla_col">
-             <thead>
-                 <tr>
-                    <td colspan="2">Tablas con combinaciòn de columnas</td>  
+         <table class="table-col">
+            <thead>
+                 <tr class="th-dora">
+                    <th colspan="8">DIFERENCIAS ENTRE EL PERRO Y EL HOMBRE</th>  
                  </tr>
-                 <tr>
-                    <td colspan="2">DIFERENCIAS ENTE EL PERRO Y EL HOMBRE</td>  
+                 <tr class="th-ama">
+                     <th colspan="2">Diferencias</th>
+                     <th>Perro Pequeño</th>
+                     <th>Perro Grande</th>
+                     <th>Humano</th>
                  </tr>
-                 <tr>
-                     <td colspan="2">Diferencias</td>
-                     <td>Perro Pequeño</td>
-                     <td>Perro Grande</td>
-                     <td>Humano</td>
-                 </tr>
+            </thead>
                  <tr>
                      <td colspan="2">Duraciòn de crecimiento</td>
                      <td>10 meses</td>
@@ -68,17 +66,14 @@
                      <td colspan="2">1 año</td>
                      <td>2 a 7 años</td>
                  </tr>
-                </thead>
          </table>   
-        </div>
+        </div> <br>
+
     <div>
-        <table class= "Tabla_com_re">
+        <table class= "table-com-re">
             <thead>
                 <tr>
-                    <td colspan="5">Tabla con combinaciòn de renglones</td>
-                </tr>
-                <tr>
-                    <td colspan="2", rowspan="2">Super OFERTA viaje a Nueva Zelanda</td>
+                    <th colspan="2", rowspan="2">Super OFERTA viaje a Nueva Zelanda</th>
                     <td colspan="2">Hoteles 3 estrellas</td>
                     <td rowspan="2">Hoteles 4 estrellas</td>
                 </tr>
@@ -107,63 +102,88 @@
                 </tr>
             </thead>
         </table>
-    </div>
-    <div>
-        <table class="Tabla_col_re">
-            <thead>
-                <tr>
-                    <td colspan="2">Tabla con combinaciòn de columnas y renglones</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Concepto</td>
-                    <td colspan="2">Entradas</td>
-                    <td colspan="2">Salidas</td>
-                    <td colspan="2">Existencias</td>
-                </tr>
-                <tr>
-                    <td>Cantidad</td>
-                    <td>Precio</td>
-                    <td>Total</td>
-                    <td>Cantidad</td>
-                    <td>Precio</td>
-                    <td>Total</td>
-                    <td>Cantidad</td>
-                    <td>Precio</td>
-                    <td>Total</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Compra</td>
-                    <td rowspan="2">300</td>
-                    <td rowspan="2">122</td>
-                    <td rowspan="2">367</td>
-                    <td rowspan="2"></td>
-                    <td>250</td>
-                    <td>1.000</td>
-                    <td></td>
-                    <td></td>
-                    <td>617</td>
-                </tr>
-                <tr>
-                    <td>250</td>
-                    <td>1.224</td>
-                </tr> 
-                <tr>
-                    <td rowspan="2">Dev. Compra (I)</td>
-                    <td colspan="3"></td>
-                    <td rowspan="2">50</td>
-                    <td rowspan="2">1.224</td>
-                    <td rowspan="2">612</td>
-                    <td>251</td>
-                    <td>100</td>
-                    <td>556</td>
-                </tr>
-                <tr>
-                    <td>250</td>
-                    <td>122.000</td>
-                </tr>
+    </div> <br>
 
-            </thead>
-        </table>
-    </div>
+    <div>
+        <table class="table-col-re">
+                <tbody>
+                     <tr>
+                        <td rowspan="5" class="co-gri" > Concepto </td>
+                        <td colspan="3" class="osc"> Entradas </td>
+                        <td colspan="3" class="osc"> Salidas </td>
+                        <td colspan="3" class="osc"> Existencias </td>
+                    </tr>
+                    
+                    <tr >
+                        <td rowspan="4" class="gri"> Cantidad </td>
+                        <td rowspan="4" class="gri"> Precio </td>
+                        <td rowspan="4" class="gri"> Total </td>
+                        <td rowspan="4" class="gri"> Cantidad </td>
+                        <td rowspan="4" class="gri">  Precio </td>
+                        <td rowspan="4" class="gri"> Total </td>
+                        <td rowspan="4" class="gri"> Cantidad </td>
+                        <td rowspan="4" class="gri"> Precio </td>
+                        <td rowspan="4" class="gri"> Total </td>
+                        <td> b </td>
+                    </tr>
+                    
+                    <tr>
+                        <td> b </td>
+                    </tr>
+                        
+                    <tr>
+                        <td> b </td>
+                    </tr>
+                    
+                    <tr>
+                        <td> b </td>
+                    </tr>
+                    
+                    <tr>
+                          <td rowspan="2"> Compra </td>
+                        <td rowspan="2"> 300 </td>
+                        <td rowspan="2"> 122 </td>
+                        <td rowspan="2"> 367 </td>
+                        <td rowspan="2">     </td>
+                        <td> 250 </td>
+                        <td> 1.000 </td>
+                        <td>       </td>
+                        <td>       </td>
+                        <td> 617 </td>
+                    </tr>
+                    
+                    <tr>
+                        <td> 250 </td>
+                        <td> 1.224 </td>
+                        <td>       </td>
+                        <td>       </td>
+                        <td>    </td>
+                    </tr>
+                    
+                    <tr>
+                          <td rowspan="3"> Dev. Compra (I) </td>
+                        <td rowspan="3" colspan="3">  </td>
+                        <td rowspan="3"> 50 </td>
+                        <td rowspan="3"> 1.224 </td>
+                        <td rowspan="3"> 612 </td>
+                        <td> 251 </td>
+                        <td> 100 </td>
+                        <td> 556 </td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="2"> 250 </td>
+                        <td rowspan="2"> 250 </td>
+                        <td rowspan="2">    </td>
+                        <td> j </td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td> h </td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>    
     </body>
-</html>
+</html> 
